@@ -22,4 +22,4 @@ def compare_data(data1, data2):
             diff += f'\n  - {key}: {data1[key]}'
             diff += f'\n  + {key}: {data2[key]}'
 
-    return diff + '\n}'
+    return diff + '\n}\n'
