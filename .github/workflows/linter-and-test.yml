@@ -1,0 +1,31 @@
+name: linter-and-test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          make install
+          
+      - name: Run linter
+        run: |
+          make lint
+      - name: Test & publish code coverage
+        uses: paambaati/codeclimate-action@v2.7.4
+        env:
+            CC_TEST_REPORTER_ID: d2a5826abdd8390f7e92cd479826c31f8804598b5175988ee06e0bdbe41da951
+        with:
+            coverageCommand: make test-coverage
+            debug: true
