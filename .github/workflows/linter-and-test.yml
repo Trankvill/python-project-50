@@ -27,7 +27,7 @@ jobs:
           pip install poetry
           make install
           poetry add --dev flake8   
-          pip install coverage 
+          pip install pytest-cov
       - name: Run linter
         run: |
           make lint
