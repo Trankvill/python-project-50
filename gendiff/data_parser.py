@@ -4,5 +4,5 @@ import json
 
 
 def parse(data, format_):
-	if format_ == 'json':
-		return json.loads(data)
+    if format_ == 'json':
+        return json.loads(data)
