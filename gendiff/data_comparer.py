@@ -1,25 +1,43 @@
 #!/usr/bin/env python
 
+NESTED = 'nested'
+ADDED = 'added'
+REMOVED = 'removed'
+CHANGED = 'changed'
+UNCHANGED = 'unchanged'
+
 
 def compare_data(data1, data2):
-    diff = '{'
+    diff = {}
     keys1, keys2 = set(data1.keys()), set(data2.keys())
     combained_keys = sorted(keys1 | keys2)
     for key in combained_keys:
         if key not in data1 and key in data2:
-            diff += f'\n  + {key}: {str(data2[key]).lower()}'
-
+            diff[key] = {
+                'type': ADDED,
+                'value': data2[key]
+            }
         elif key in data1 and key not in data2:
-            diff += f'\n  - {key}: {str(data1[key]).lower()}'
-
+            diff[key] = {
+                'type': REMOVED,
+                'value': data1[key]
+            }
         elif data1[key] == data2[key]:
-            diff += f'\n    {key}: {data2[key]}'
-
+            diff[key] = {
+                'type': UNCHANGED,
+                'value': data2[key]
+            }
         elif isinstance(data1[key], dict) and isinstance(data2[key], dict):
-            diff += f'\n  {key}: {compare_data(data1[key], data2[key])}'
-
+            diff[key] = {
+                'type': NESTED,
+                'value': compare_data(data1[key], data2[key])
+            }
         else:
-            diff += f'\n  - {key}: {data1[key]}'
-            diff += f'\n  + {key}: {data2[key]}'
-
-    return diff + '\n}\n'
+            diff[key] = {
+                'type': CHANGED,
+                'value': {
+                    'old value': data1[key],
+                    'new value': data2[key]
+                }
+            }
+    return diff
