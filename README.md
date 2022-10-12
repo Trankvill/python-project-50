@@ -10,5 +10,5 @@
 ### Comparison of flat files (JSON):
 [![asciicast](https://asciinema.org/a/YCJ7YK4InOiucts38SDvAghQm.svg)](https://asciinema.org/a/YCJ7YK4InOiucts38SDvAghQm)
 
-###Flat file comparison (YAML, YML):
+### Flat file comparison (YAML, YML):
 [![asciicast](https://asciinema.org/a/SCGHFGtLfBNVip5Vyywcblwip.svg)](https://asciinema.org/a/SCGHFGtLfBNVip5Vyywcblwip)
