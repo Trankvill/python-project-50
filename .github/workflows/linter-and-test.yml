@@ -28,6 +28,7 @@ jobs:
           make install
           poetry add --dev flake8   
           pip install pytest-cov
+          pip3 install pyyaml
       - name: Run linter
         run: |
           make lint
