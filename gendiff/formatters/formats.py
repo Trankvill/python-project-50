@@ -1,1 +1,2 @@
 JSON = 'json'
+STYLISH = 'stylish'
