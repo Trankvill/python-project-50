@@ -11,7 +11,6 @@
 [![asciicast](https://asciinema.org/a/YCJ7YK4InOiucts38SDvAghQm.svg)](https://asciinema.org/a/YCJ7YK4InOiucts38SDvAghQm)
 
 ### Flat file comparison (FORMATS: YAML, YML):
->>>>>>> a669c80 (update project to 1.0.0, add file1_nested.json file2_nested.json file1_nested.yaml file2_nested.yaml answer_stylish_nested)
 [![asciicast](https://asciinema.org/a/SCGHFGtLfBNVip5Vyywcblwip.svg)](https://asciinema.org/a/SCGHFGtLfBNVip5Vyywcblwip)
 
 ### Recursive file comparison(FORMAT: JSON):
