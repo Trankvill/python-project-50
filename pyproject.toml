@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.9.7"
+version = "1.0.0"
 description = "Difference calculator utility"
 authors = ["Konstantin Chupin <chupin.k@yandex.ru>"]
 packages = [
