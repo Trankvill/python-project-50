@@ -1,7 +1,7 @@
 import pytest
 from gendiff.gendiff import generate_diff
 from gendiff.file_reader import read_file
-from gendiff.formatters.formats import JSON, STYLISH
+from gendiff.formatters.formats import JSON, STYLISH, PLAIN
 
 
 FLAT_JSON_FILE1 = 'tests/fixtures/file1.json'
@@ -17,6 +17,8 @@ NESTED_YAML_FILE2 = 'tests/fixtures/file2_nested.yaml'
 
 ANSWER_STYLISH_FLAT = 'tests/fixtures/answer_stylish_flat'
 ANSWER_STYLISH_NESTED = 'tests/fixtures/answer_stylish_nested'
+ANSWER_PLAIN_FLAT = 'tests/fixtures/answer_plain_flat'
+ANSWER_PLAIN_NESTED = 'tests/fixtures/answer_plain_nested'
 
 def get_answer(answer_path):
     return read_file(answer_path)
@@ -28,6 +30,11 @@ def get_answer(answer_path):
     (FLAT_YML_FILE1, FLAT_YML_FILE2, STYLISH, ANSWER_STYLISH_FLAT),
     (NESTED_JSON_FILE1, NESTED_JSON_FILE2, STYLISH, ANSWER_STYLISH_NESTED),
     (NESTED_YAML_FILE1, NESTED_YAML_FILE2, STYLISH, ANSWER_STYLISH_NESTED),
+    (FLAT_JSON_FILE1, FLAT_JSON_FILE2, PLAIN, ANSWER_PLAIN_FLAT),
+    (FLAT_YAML_FILE1, FLAT_YAML_FILE2, PLAIN, ANSWER_PLAIN_FLAT),
+    (FLAT_YML_FILE1, FLAT_YML_FILE2, PLAIN, ANSWER_PLAIN_FLAT),
+    (NESTED_JSON_FILE1, NESTED_JSON_FILE2, PLAIN, ANSWER_PLAIN_NESTED),
+    (NESTED_YAML_FILE1, NESTED_YAML_FILE2, PLAIN, ANSWER_PLAIN_NESTED),
 ])
 def test_generate_diff(filepath1, filepath2, format_name, answer):
     assert generate_diff(filepath1, filepath2, format_name) \

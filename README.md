@@ -18,3 +18,6 @@
 
 ### Recursive file comparison(FORMAT: YAML):
 [![asciicast](https://asciinema.org/a/ZFxD90goMVC2YweGXLB5xHVBE.svg)](https://asciinema.org/a/ZFxD90goMVC2YweGXLB5xHVBE)
+
+### Plain file comparison (FORMATS: JSON, YAML):
+[![asciicast](https://asciinema.org/a/1wRAcYuMjdWxJTHyO53nXzslH.svg)](https://asciinema.org/a/1wRAcYuMjdWxJTHyO53nXzslH)
