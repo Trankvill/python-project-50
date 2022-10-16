@@ -46,5 +46,5 @@ def get_answer(answer_path):
 ])
 def test_generate_diff(filepath1, filepath2, format_name, answer):
     answer = get_answer(answer)
-    len_answer = len(answer)
-    assert generate_diff(filepath1, filepath2, format_name) == answer[:len_answer-1]
+    l_answer = len(answer) #length answer
+    assert generate_diff(filepath1, filepath2, format_name) == answer[:l_answer - 1]
