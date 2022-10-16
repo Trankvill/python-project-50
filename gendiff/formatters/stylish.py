@@ -62,4 +62,4 @@ def get_stringify_diff(diff, depth):
 
 def format_stylish(diff, depth=0):
     final_list = ['{', get_stringify_diff(diff, depth), '}']
-    return '\n'.join(final_list) + '\n'
+    return '\n'.join(final_list)
