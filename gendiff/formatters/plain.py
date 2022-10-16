@@ -58,4 +58,4 @@ def get_message_string(diff, previous_path):
 
 
 def format_plain(diff):
-    return get_message_string(diff, previous_path='') + '\n'
+    return get_message_string(diff, previous_path='')
