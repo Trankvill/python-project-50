@@ -45,7 +45,6 @@ def get_answer(answer_path):
     (NESTED_YAML_FILE1, NESTED_YAML_FILE2, JSON, ANSWER_JSON_NESTED),
 ])
 def test_generate_diff(filepath1, filepath2, format_name, answer):
-    right_answer = get_answer(answer)
-    len_right_answer = len(right_answer)
-    assert generate_diff(filepath1, filepath2, format_name) \
-            == right_answer[:len_right_answer-1]
+    answer = get_answer(answer)
+    len_answer = len(answer)
+    assert generate_diff(filepath1, filepath2, format_name) == answer[:len_answer-1]
