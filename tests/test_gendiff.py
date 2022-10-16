@@ -22,6 +22,7 @@ ANSWER_PLAIN_NESTED = 'tests/fixtures/answer_plain_nested'
 ANSWER_JSON_FLAT = 'tests/fixtures/answer_json_flat'
 ANSWER_JSON_NESTED = 'tests/fixtures/answer_json_nested'
 
+
 def get_answer(answer_path):
     return read_file(answer_path)
 
