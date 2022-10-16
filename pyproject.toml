@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "1.1.5"
+version = "1.1.6"
 description = "Difference calculator utility"
 authors = ["Konstantin Chupin <chupin.k@yandex.ru>"]
 packages = [
@@ -10,7 +10,7 @@ repository = "<https://github.com/Trankvill/python-project-50>"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pytest = "^6.2.5"
+pytest = "^7.1.2"
 PyYAML = "^6.0"
 pytest-cov = "^3.0.0"
 
