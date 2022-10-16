@@ -10,6 +10,7 @@ DIFF_MESSAGES = {
 
 
 def get_stringify_value(value):
+    """Gets a string representation of the parameter value."""
     if isinstance(value, bool) or value is None:
         return json.dumps(value)
     elif isinstance(value, str):
@@ -21,12 +22,15 @@ def get_stringify_value(value):
 
 
 def get_path_string(previous_path, key):
+    """Gets a string representation of the path."""
     if previous_path:
         return previous_path + f'.{key}'
     return f'{key}'
 
 
 def get_message_string(diff, previous_path):
+    """Receives messages about changes in the parameters of the files
+    being compared."""
     messages = []
     for key, value_types in diff.items():
         path = get_path_string(previous_path, key)
