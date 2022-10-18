@@ -5,4 +5,7 @@
 dist/
 
 #ignore __pycache__
-__pycache__
+__pycache_
+
+#ignore coverage.xml
+coverage.xml

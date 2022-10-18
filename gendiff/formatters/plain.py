@@ -9,7 +9,7 @@ DIFF_MESSAGES = {
 }
 
 
-def get_stringify_value(value):
+def stringify_value(value):
     """Gets a string representation of the parameter value."""
     if isinstance(value, bool) or value is None:
         return json.dumps(value)
@@ -39,8 +39,8 @@ def get_message_string(diff, previous_path):
         if type_ == NESTED:
             messages.append(get_message_string(value, path))
         elif type_ == CHANGED:
-            old_value = get_stringify_value(value.get('old value'))
-            new_value = get_stringify_value(value.get('new value'))
+            old_value = stringify_value(value.get('old value'))
+            new_value = stringify_value(value.get('new value'))
             message = DIFF_MESSAGES[type_].format(
                 path=path,
                 old_value=old_value,
@@ -48,7 +48,7 @@ def get_message_string(diff, previous_path):
             )
             messages.append(message)
         elif type_ == ADDED:
-            value = get_stringify_value(value_types.get('value'))
+            value = stringify_value(value_types.get('value'))
             message = DIFF_MESSAGES[type_].format(path=path, value=value)
             messages.append(message)
         elif type_ == REMOVED:
