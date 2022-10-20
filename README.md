@@ -8,22 +8,22 @@
 
 
 ### Help output:
-[![asciicast](https://asciinema.org/a/WdmG6G6d1cDVk3SIFNfpjxcy6.svg)](https://asciinema.org/a/WdmG6G6d1cDVk3SIFNfpjxcy6)
+[![asciicast](https://asciinema.org/a/ZSKsA6JF3SRvuHpArbo3n1MWl.svg)](https://asciinema.org/a/ZSKsA6JF3SRvuHpArbo3n1MWl)
 
 ### Comparison of flat files by STYLISH (file formats: JSON):
-[![asciicast](https://asciinema.org/a/YCJ7YK4InOiucts38SDvAghQm.svg)](https://asciinema.org/a/YCJ7YK4InOiucts38SDvAghQm)
+[![asciicast](https://asciinema.org/a/hSuRdmruELfhkIt4C6fu0yaHw.svg)](https://asciinema.org/a/hSuRdmruELfhkIt4C6fu0yaHw)
 
 ### Flat file comparison by STYLISH (file formats: YAML, YML):
-[![asciicast](https://asciinema.org/a/SCGHFGtLfBNVip5Vyywcblwip.svg)](https://asciinema.org/a/SCGHFGtLfBNVip5Vyywcblwip)
+[![asciicast](https://asciinema.org/a/zqnoK9mFdnkQf9JiZS05Fl9Fx.svg)](https://asciinema.org/a/zqnoK9mFdnkQf9JiZS05Fl9Fx)
 
 ### Recursive file comparison by STYLISH (file formats: JSON):
-[![asciicast](https://asciinema.org/a/86cvPE45GuX4mTzjJyrOFeDuS.svg)](https://asciinema.org/a/86cvPE45GuX4mTzjJyrOFeDuS)
+[![asciicast](https://asciinema.org/a/55XRDs8VN1BeT7hdm7jA1s1N5.svg)](https://asciinema.org/a/55XRDs8VN1BeT7hdm7jA1s1N5)
 
 ### Recursive file comparison by STYLISH (file formats: YAML):
-[![asciicast](https://asciinema.org/a/ZFxD90goMVC2YweGXLB5xHVBE.svg)](https://asciinema.org/a/ZFxD90goMVC2YweGXLB5xHVBE)
+[![asciicast](https://asciinema.org/a/dVxVcbLpIvvPFwZ5Xd9p3icPG.svg)](https://asciinema.org/a/dVxVcbLpIvvPFwZ5Xd9p3icPG)
 
 ### File comparison by PLAIN (file formats: JSON, YAML):
-[![asciicast](https://asciinema.org/a/1wRAcYuMjdWxJTHyO53nXzslH.svg)](https://asciinema.org/a/1wRAcYuMjdWxJTHyO53nXzslH)
+[![asciicast](https://asciinema.org/a/weUweLxkau8YUkSTDFEny5BLg.svg)](https://asciinema.org/a/weUweLxkau8YUkSTDFEny5BLg)
 
 ### File comparison by FLAT (file formats: JSON, YAML):
-[![asciicast](https://asciinema.org/a/n4EFzRcb8CjZUdo2arZ4uF1KM.svg)](https://asciinema.org/a/n4EFzRcb8CjZUdo2arZ4uF1KM)
+[![asciicast](https://asciinema.org/a/RANesmK38gs93PMFkBdqAHUjB.svg)](https://asciinema.org/a/RANesmK38gs93PMFkBdqAHUjB)
