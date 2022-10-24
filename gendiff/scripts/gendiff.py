@@ -3,7 +3,7 @@
 import argparse
 
 from gendiff.gendiff import generate_diff
-from gendiff.formatters.formats import STYLISH
+from gendiff.formatters.formats import STYLISH, PLAIN, JSON
 
 
 def get_args():
@@ -14,8 +14,7 @@ def get_args():
     parser.add_argument('first_file')
     parser.add_argument('second_file')
     parser.add_argument(
-        '-f', '--format',
-        choices=['stylish', 'json', 'plain'],
+        '-f', '--format', choices=[STYLISH, PLAIN, JSON],
         default=STYLISH,
         help='set format of output (default: "stylish")'
     )
